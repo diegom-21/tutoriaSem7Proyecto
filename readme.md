@@ -14,6 +14,7 @@
 4. **Cards de Productos:**
    - Presenta una selección de productos destacados de la tienda, con imágenes, títulos, descripciones y botones para obtener más información.
 
+
 ### Media 
 
 - **@media (max-width: 880px):**
