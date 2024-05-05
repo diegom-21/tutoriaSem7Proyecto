@@ -1,0 +1,80 @@
+.Nav {
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+
+    /* DENTRO DEL NAV PARTE DEL LOGO  */
+    &-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        color: $color-texto-nav;
+
+        .logo {
+            border-radius: 50px;
+            height: 70px;
+            width: auto;
+        }
+    }
+
+    /* DENTRO DEL NAV PARTE DE LA LISTA  */
+    &-list {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+
+        .Nav-item {
+            padding: 10px;
+
+            .Nav-link {
+                padding: 10px;
+                text-decoration: none;
+                color: $color-texto-nav;
+            }
+
+            .Nav-link:hover {
+                background-color: rgba(12, 12, 12, 0.500);
+                border-radius: 16px;
+            }
+        }
+    }
+
+    /* DENTRO DEL NAV PARTE DE EL BOTON  */
+    &-boton {
+        .btn {
+            background-color: $color-boton;
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            color: $color-texto-nav;
+            font-size: 15px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+    }
+
+}
+
+/* CUANDO EL ANCHO DE LA PANTALLA SEA IGUAL O MENOR A 880px.  */
+@media (max-width: 880px) {
+    .Nav {
+        flex-direction: column;
+        align-items: center;
+        padding: 18px;
+
+        &-logo {
+            margin-bottom: 15px;
+        }
+
+        &-list {
+            flex-direction: column;
+            gap: 15px;
+            margin-bottom: 15px;
+        }
+    }
+}

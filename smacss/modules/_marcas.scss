@@ -1,0 +1,53 @@
+.Marcas {
+    text-align: center;
+    margin: 20px 0;
+    background-color: #2a9fff73;
+    padding: 15px;
+}
+
+.Marcas-titulo {
+    font-size: 45px;
+    font-weight: bold;
+    color: $color-texto-nav;
+}
+
+.Marcas-container {
+    margin: 15px 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+}
+
+.Marca {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.Marca-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Marca:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
+}
+
+/* CUANDO EL ANCHO DE LA PANTALLA SEA IGUAL O MENOR A 880px.  */
+@media (max-width: 880px) {
+    .Marcas-container {
+        flex-direction: column;
+        /* Cambia la dirección del flexbox a vertical */
+        gap: 15px;
+        /* Aumenta el espacio entre elementos de la columna */
+    }
+
+    .Marca {
+        width: 80%;
+        /* Establece el ancho de las marcas al 80% del contenedor */
+    }
+}

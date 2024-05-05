@@ -1,0 +1,47 @@
+/* smacss/modules/_informacion.scss */
+
+.Informacion {
+    &-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 20px;
+
+        .Informacion-info {
+            .Informacion-titulo {
+                font-size: 45px;
+                color: $color-texto-nav;
+                font-weight: bold;
+            }
+
+            .Informacion-texto {
+                font-size: 25px;
+                font-weight: bold;
+            }
+        }
+
+        .Informacion-imagen {
+            width: 550px;
+            height: auto;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.9);
+        }
+    }
+}
+
+/* CUANDO EL ANCHO DE LA PANTALLA SEA IGUAL O MENOR A 880px.  */
+@media (max-width: 880px) {
+    .Informacion-item {
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 20px;
+
+        .Informacion-imagen {
+            width: 80%;
+        }
+    }
+
+    .Informacion-info {
+        text-align: center;
+    }
+}
